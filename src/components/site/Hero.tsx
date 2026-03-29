@@ -5,7 +5,7 @@ import { BrandLogo } from "@/components/site/BrandLogo";
 
 export function Hero() {
   return (
-    <section className="relative z-10 flex min-h-[100svh] flex-col items-center justify-center overflow-hidden px-4 pb-24 pt-28 text-center sm:px-6 sm:pt-32">
+    <section className="relative z-10 flex min-h-[100svh] flex-col items-center justify-center overflow-hidden px-4 pb-14 pt-28 text-center sm:px-6 sm:pt-32">
       {/* 首屏背景视频 */}
       <div className="pointer-events-none absolute inset-0 z-0">
         <video

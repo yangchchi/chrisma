@@ -6,7 +6,7 @@ export function CTA() {
   return (
     <section
       id="contact"
-      className="relative z-10 scroll-mt-28 px-4 pb-32 pt-12 sm:px-6"
+      className="relative z-10 scroll-mt-28 px-4 pb-20 pt-8 sm:px-6"
     >
       <motion.div
         initial={{ opacity: 0, y: 24 }}

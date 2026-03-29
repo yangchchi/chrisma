@@ -50,7 +50,7 @@ export function Features() {
   return (
     <section
       id="products"
-      className="relative z-10 scroll-mt-28 px-4 py-24 sm:px-6"
+      className="relative z-10 scroll-mt-28 px-4 py-14 sm:px-6"
     >
       <div className="mx-auto max-w-6xl">
         <motion.div
@@ -58,7 +58,7 @@ export function Features() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6 }}
-          className="mb-16 text-center"
+          className="mb-10 text-center"
         >
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#7dd3fc]">
             Products

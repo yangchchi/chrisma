@@ -2,19 +2,19 @@ import Link from "next/link";
 import { BrandLogoFooter } from "@/components/site/BrandLogo";
 
 const nav = [
-  { href: "#vision", label: "关于" },
-  { href: "#products", label: "产品" },
-  { href: "#team", label: "团队" },
-  { href: "#contact", label: "联系" },
+  // { href: "#vision", label: "关于" },
+  // { href: "#products", label: "产品" },
+  // { href: "#team", label: "团队" },
+  // { href: "#contact", label: "联系" },
 ];
 
 export function Footer() {
   return (
-    <footer className="relative z-10 border-t border-white/10 bg-black/25 px-4 py-14 backdrop-blur-sm sm:px-6">
+    <footer className="relative z-10 border-t border-white/10 bg-black/25 px-4 py-10 backdrop-blur-sm sm:px-6">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-10 md:flex-row md:items-start">
         <div className="flex flex-col items-center text-center md:items-start md:text-left">
           <BrandLogoFooter className="opacity-95" />
-          <p className="mt-4 max-w-sm text-sm leading-relaxed text-zinc-500">
+          <p className="mt-4 max-w-full overflow-x-auto text-nowrap text-sm leading-relaxed text-zinc-500">
             用 AI 让一切变得更有魅力。专注 AI 应用创新与落地，服务 toB / toC 双场景。
           </p>
           <p className="mt-3 text-sm text-zinc-600">

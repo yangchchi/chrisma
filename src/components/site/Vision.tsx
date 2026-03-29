@@ -13,7 +13,7 @@ export function Vision() {
   return (
     <section
       id="vision"
-      className="relative z-10 scroll-mt-28 px-4 py-24 sm:px-6"
+      className="relative z-10 scroll-mt-28 px-4 py-14 sm:px-6"
     >
       <div className="mx-auto max-w-5xl">
         <motion.div

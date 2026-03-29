@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 const team = [
   { name: "Chris", role: "CEO", desc: "战略与重大决策，推动产品与解决方案市场落地" },
   { name: "Zoe", role: "COO / 总裁助理", desc: "需求收口、评审与分派，项目跟踪与对外沟通" },
+  { name: "Rich", role: "CFO / 财务负责人", desc: "主导公司财务战略规划与资金统筹管理，开展经营数据分析与成本管控" },
   { name: "Codey", role: "CTO", desc: "技术选型、架构与研发规范，基础设施与难点攻坚" },
   { name: "Ally", role: "CPO", desc: "产品路线图、需求分析与体验设计，推进迭代落地" },
   { name: "Testy", role: "测试负责人", desc: "测试策略与验收标准，全流程质量保障与报告" },
@@ -31,7 +32,7 @@ export function Team() {
   return (
     <section
       id="team"
-      className="relative z-10 scroll-mt-28 px-4 py-24 sm:px-6"
+      className="relative z-10 scroll-mt-28 px-4 py-14 sm:px-6"
     >
       <div className="mx-auto max-w-6xl">
         <motion.div
@@ -39,7 +40,7 @@ export function Team() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6 }}
-          className="mb-14 text-center"
+          className="mb-10 text-center"
         >
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#a78bfa]">
             Team
