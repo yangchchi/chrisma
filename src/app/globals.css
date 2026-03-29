@@ -5,10 +5,14 @@
   --bg-elevated: #0c0118;
   --text-primary: #f4f4f8;
   --text-muted: #a09bb0;
+  /* 品牌色（与官方 Logo 一致） */
+  --brand-cyan: #00d2ff;
+  --brand-purple: #9d50bb;
+  --text-brand-dark: #1a202c;
   --accent-violet: #8b5cf6;
   --accent-fuchsia: #e879f9;
   --accent-cyan: #22d3ee;
-  --ring-glow: rgba(139, 92, 246, 0.35);
+  --ring-glow: rgba(0, 210, 255, 0.25);
 }
 
 @theme inline {
@@ -147,12 +151,29 @@ body {
 .gradient-text {
   background: linear-gradient(
     135deg,
-    #faf5ff 0%,
-    #e879f9 35%,
-    #22d3ee 65%,
-    #a78bfa 100%
+    #ffffff 0%,
+    var(--brand-cyan) 35%,
+    #e9d5ff 60%,
+    var(--brand-purple) 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+/* 主行动按钮：青 → 紫 */
+.btn-brand-solid {
+  background: linear-gradient(
+    135deg,
+    var(--brand-cyan) 0%,
+    #b46fd4 55%,
+    var(--brand-purple) 100%
+  );
+  box-shadow:
+    0 4px 24px -4px rgba(0, 210, 255, 0.35),
+    0 8px 32px -8px rgba(157, 80, 187, 0.4);
+}
+
+.btn-brand-solid:hover {
+  filter: brightness(1.07);
 }

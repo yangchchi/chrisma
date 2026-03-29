@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Noto_Sans_SC, Syne } from "next/font/google";
 import "./globals.css";
 
@@ -17,8 +17,30 @@ const notoSansSC = Noto_Sans_SC({
 export const metadata: Metadata = {
   title: "Chrisma — 用 AI 让一切变得更有魅力",
   description:
-    "Chrisma 是一家专注 AI 应用的创新公司，以多模态智能与极致产品体验，赋能企业与创作者。",
-  keywords: ["Chrisma", "AI", "人工智能", "多模态", "AI 应用"],
+    "Chrisma 是专注 AI 应用创新的 OPC，面向 toB / toC 双赛道，提供 AI 风水、AI 命理、AIGC 创作平台与企业级 Agent 解决方案。",
+  keywords: [
+    "Chrisma",
+    "AI",
+    "人工智能",
+    "AIGC",
+    "Agent",
+    "AI 应用",
+    "一人公司",
+    "OPC",
+  ],
+  openGraph: {
+    title: "Chrisma — 用 AI 让一切变得更有魅力",
+    description:
+      "专注 AI 应用研发与落地：传统文化智能、AIGC 创作与企业 Agent，高效 OPC 团队精准交付。",
+    locale: "zh_CN",
+    type: "website",
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#030014",
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
