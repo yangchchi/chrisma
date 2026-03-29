@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { BrandLogoFooter } from "@/components/site/BrandLogo";
 
-const nav = [
+type NavItem = { href: string; label: string };
+
+const nav: NavItem[] = [
   // { href: "#vision", label: "关于" },
   // { href: "#products", label: "产品" },
   // { href: "#team", label: "团队" },
