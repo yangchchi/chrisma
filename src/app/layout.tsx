@@ -41,6 +41,7 @@ export const viewport: Viewport = {
   themeColor: "#030014",
   width: "device-width",
   initialScale: 1,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({
@@ -53,7 +54,9 @@ export default function RootLayout({
       lang="zh-CN"
       className={`${syne.variable} ${notoSansSC.variable} h-full antialiased`}
     >
-      <body className="min-h-full overflow-x-hidden">{children}</body>
+      <body className="min-h-full overflow-x-hidden pb-[env(safe-area-inset-bottom,0px)]">
+        {children}
+      </body>
     </html>
   );
 }

@@ -13,7 +13,7 @@ export function Vision() {
   return (
     <section
       id="vision"
-      className="relative z-10 scroll-mt-28 px-4 py-14 sm:px-6"
+      className="relative z-10 scroll-mt-24 px-4 py-10 sm:scroll-mt-28 sm:px-6 sm:py-14"
     >
       <div className="mx-auto max-w-5xl">
         <motion.div
@@ -21,7 +21,7 @@ export function Vision() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] as const }}
-          className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br from-[#1a0a2e]/80 via-[#0c0118] to-[#0a1628]/80 p-10 sm:p-16 md:p-20"
+          className="relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-[#1a0a2e]/80 via-[#0c0118] to-[#0a1628]/80 p-6 sm:rounded-[2rem] sm:p-16 md:p-20"
         >
           <div className="pointer-events-none absolute -right-20 top-0 h-64 w-64 rounded-full bg-[#9D50BB]/25 blur-3xl" />
           <div className="pointer-events-none absolute -left-10 bottom-0 h-48 w-48 rounded-full bg-[#00D2FF]/15 blur-3xl" />
@@ -29,7 +29,7 @@ export function Vision() {
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-[#7dd3fc]">
             About Chrisma
           </p>
-          <blockquote className="font-display text-2xl font-bold leading-snug text-white sm:text-3xl md:text-[2rem] md:leading-snug">
+          <blockquote className="font-display text-pretty text-xl font-bold leading-snug text-white sm:text-2xl sm:leading-snug md:text-[2rem] md:leading-snug">
             用 AI 让一切变得更有魅力。
             <span className="gradient-text"> 以 OPC 的敏捷，做 toB / toC 真正用得上的 AI。</span>
           </blockquote>

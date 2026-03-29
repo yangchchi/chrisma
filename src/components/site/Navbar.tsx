@@ -22,13 +22,13 @@ export function Navbar() {
       initial={{ y: -24, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as const }}
-      className="fixed left-0 right-0 top-0 z-50 px-4 pt-4 sm:px-6"
+      className="fixed left-0 right-0 top-0 z-50 px-3 pt-[max(0.75rem,env(safe-area-inset-top))] sm:px-6 sm:pt-4"
     >
-      <nav className="glass-panel mx-auto flex max-w-6xl flex-col rounded-2xl px-4 py-3 sm:px-6">
-        <div className="flex items-center justify-between gap-4">
+      <nav className="glass-panel mx-auto flex max-w-6xl min-w-0 flex-col rounded-2xl px-3 py-3 sm:px-6">
+        <div className="flex min-w-0 items-center justify-between gap-2 sm:gap-4">
           <Link
             href="#"
-            className="flex shrink-0 items-center"
+            className="flex min-w-0 shrink items-center"
             onClick={closeMenu}
           >
             <BrandLogoNav />
@@ -82,7 +82,7 @@ export function Navbar() {
             </button>
             <Link
               href="#contact"
-              className="btn-brand-solid rounded-full px-4 py-2 text-sm font-semibold text-[#1A202C] transition hover:scale-[1.02]"
+              className="btn-brand-solid whitespace-nowrap rounded-full px-3 py-2 text-xs font-semibold text-[#1A202C] transition hover:scale-[1.02] sm:px-4 sm:text-sm"
               onClick={closeMenu}
             >
               预约演示

@@ -32,7 +32,7 @@ export function Team() {
   return (
     <section
       id="team"
-      className="relative z-10 scroll-mt-28 px-4 py-14 sm:px-6"
+      className="relative z-10 scroll-mt-24 px-4 py-10 sm:scroll-mt-28 sm:px-6 sm:py-14"
     >
       <div className="mx-auto max-w-6xl">
         <motion.div
@@ -45,10 +45,10 @@ export function Team() {
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#a78bfa]">
             Team
           </p>
-          <h2 className="font-display text-3xl font-bold text-white sm:text-4xl md:text-5xl">
+          <h2 className="font-display text-pretty text-[clamp(1.5rem,5vw,3rem)] font-bold leading-tight text-white sm:text-4xl md:text-5xl">
             核心团队
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-zinc-400">
+          <p className="mx-auto mt-4 max-w-2xl text-pretty text-zinc-400">
             专业分工、协同高效：从战略到落地全流程闭环，保障每一项交付精准可控。
           </p>
         </motion.div>
@@ -64,7 +64,7 @@ export function Team() {
             <motion.li
               key={m.name}
               variants={item}
-              className="glass-panel rounded-2xl p-6 transition hover:border-[#9D50BB]/30"
+              className="glass-panel rounded-2xl p-5 transition hover:border-[#9D50BB]/30 sm:p-6"
             >
               <p className="font-display text-lg font-bold text-white">
                 {m.name}{" "}

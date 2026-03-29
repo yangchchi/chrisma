@@ -5,7 +5,7 @@ import { BrandLogo } from "@/components/site/BrandLogo";
 
 export function Hero() {
   return (
-    <section className="relative z-10 flex min-h-[100svh] flex-col items-center justify-center overflow-hidden px-4 pb-14 pt-28 text-center sm:px-6 sm:pt-32">
+    <section className="relative z-10 flex min-h-[100svh] flex-col items-center justify-center overflow-hidden px-4 pb-[max(3.5rem,env(safe-area-inset-bottom,0px))] pt-[max(7rem,calc(env(safe-area-inset-top,0px)+5.75rem))] text-center supports-[height:100dvh]:min-h-[100dvh] sm:px-6 sm:pb-14 sm:pt-32">
       {/* 首屏背景视频 */}
       <div className="pointer-events-none absolute inset-0 z-0">
         <video
@@ -47,7 +47,7 @@ export function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-        className="relative z-10 mb-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-black/30 px-4 py-1.5 text-xs font-medium text-zinc-200 backdrop-blur-md sm:text-sm"
+        className="relative z-10 mb-6 inline-flex max-w-[min(100%,22rem)] flex-wrap items-center justify-center gap-x-2 gap-y-1 rounded-full border border-white/15 bg-black/30 px-3 py-2 text-[11px] font-medium leading-snug text-zinc-200 backdrop-blur-md sm:max-w-none sm:px-4 sm:py-1.5 sm:text-sm"
       >
         <span className="relative flex h-2 w-2">
           <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#00D2FF] opacity-60" />
@@ -60,7 +60,7 @@ export function Hero() {
         initial={{ opacity: 0, y: 18 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
-        className="relative z-10 max-w-2xl text-base leading-relaxed text-zinc-300 sm:text-lg"
+        className="relative z-10 max-w-2xl text-pretty text-base leading-relaxed text-zinc-300 sm:text-lg"
       >
         聚焦 AI 应用研发与落地，打造兼具专业性、实用性与创新性的产品与解决方案，让前沿
         AI 走进日常、赋能商业。
@@ -70,17 +70,17 @@ export function Hero() {
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.65, delay: 0.38, ease: [0.22, 1, 0.36, 1] }}
-        className="relative z-10 mt-11 flex flex-col items-center gap-4 sm:flex-row sm:gap-5"
+        className="relative z-10 mt-11 flex w-full max-w-md flex-col items-stretch gap-3 sm:max-w-none sm:flex-row sm:items-center sm:justify-center sm:gap-5"
       >
         <a
           href="#products"
-          className="btn-brand-solid inline-flex min-w-[200px] items-center justify-center rounded-full px-8 py-3.5 text-base font-semibold text-[#1A202C] shadow-lg transition hover:scale-[1.02]"
+          className="btn-brand-solid inline-flex min-h-[48px] w-full items-center justify-center rounded-full px-6 py-3.5 text-base font-semibold text-[#1A202C] shadow-lg transition hover:scale-[1.02] sm:min-h-0 sm:min-w-[200px] sm:w-auto sm:px-8"
         >
           了解产品体系
         </a>
         <a
           href="#contact"
-          className="inline-flex min-w-[200px] items-center justify-center rounded-full border border-white/20 bg-white/10 px-8 py-3.5 text-base font-semibold text-white backdrop-blur-md transition hover:border-white/30 hover:bg-white/15"
+          className="inline-flex min-h-[48px] w-full items-center justify-center rounded-full border border-white/20 bg-white/10 px-6 py-3.5 text-base font-semibold text-white backdrop-blur-md transition hover:border-white/30 hover:bg-white/15 sm:min-h-0 sm:min-w-[200px] sm:w-auto sm:px-8"
         >
           合作与咨询
         </a>
@@ -90,7 +90,7 @@ export function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.9, duration: 0.8 }}
-        className="absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-2 text-zinc-500"
+        className="absolute bottom-[max(1.5rem,env(safe-area-inset-bottom))] left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-2 text-zinc-500 sm:flex"
       >
         <span className="text-xs uppercase tracking-widest">Scroll</span>
         <motion.div

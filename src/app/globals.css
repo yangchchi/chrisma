@@ -24,6 +24,14 @@
 
 html {
   scroll-behavior: smooth;
+  /* 避免移动端 100vw 含滚动条导致的横向溢出 */
+  overflow-x: clip;
+}
+
+@media (max-width: 639px) {
+  .bg-grid-fade {
+    background-size: 100% 100%, 40px 40px, 40px 40px;
+  }
 }
 
 body {

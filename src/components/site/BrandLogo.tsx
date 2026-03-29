@@ -13,11 +13,16 @@ function cx(...parts: (string | undefined)[]) {
 /** 首屏主视觉：文字标识 + 标语 */
 export function BrandLogo({ className }: BrandLogoProps) {
   return (
-    <div className={cx("flex flex-col items-center gap-3 text-center", className)}>
-      <span className={cx(wordmark, "text-5xl leading-none sm:text-6xl md:text-7xl")}>
+    <div className={cx("flex flex-col items-center gap-2 text-center sm:gap-3", className)}>
+      <span
+        className={cx(
+          wordmark,
+          "text-[clamp(2.25rem,8vw,4.5rem)] leading-none sm:text-6xl md:text-7xl",
+        )}
+      >
         Chrisma
       </span>
-      <span className="max-w-md text-sm font-medium leading-relaxed text-zinc-300/90 sm:text-base">
+      <span className="max-w-[min(100%,20rem)] px-1 text-sm font-medium leading-relaxed text-zinc-300/90 sm:max-w-md sm:px-0 sm:text-base">
         用 AI 让一切变得更有魅力
       </span>
     </div>

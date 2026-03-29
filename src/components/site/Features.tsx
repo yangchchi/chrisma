@@ -50,7 +50,7 @@ export function Features() {
   return (
     <section
       id="products"
-      className="relative z-10 scroll-mt-28 px-4 py-14 sm:px-6"
+      className="relative z-10 scroll-mt-24 px-4 py-10 sm:scroll-mt-28 sm:px-6 sm:py-14"
     >
       <div className="mx-auto max-w-6xl">
         <motion.div
@@ -63,10 +63,10 @@ export function Features() {
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#7dd3fc]">
             Products
           </p>
-          <h2 className="font-display text-3xl font-bold text-white sm:text-4xl md:text-5xl">
+          <h2 className="font-display text-pretty text-[clamp(1.5rem,5vw,3rem)] font-bold leading-tight text-white sm:text-4xl md:text-5xl">
             核心产品体系
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-zinc-400">
+          <p className="mx-auto mt-4 max-w-2xl text-pretty text-zinc-400">
             传统文化智能与 AIGC 创作并行，个人体验与企业服务兼顾，全链路释放 AI
             魅力。
           </p>
@@ -88,11 +88,13 @@ export function Features() {
               <div
                 className={`absolute inset-0 bg-gradient-to-br ${p.accent} opacity-90 transition group-hover:opacity-100`}
               />
-              <div className="glass-panel relative flex h-full flex-col rounded-[calc(1.5rem-1px)] p-8 transition group-hover:border-white/15">
-                <span className="mb-4 inline-flex w-fit rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-[#a5f3fc]">
+              <div className="glass-panel relative flex h-full flex-col rounded-[calc(1.5rem-1px)] p-5 transition group-hover:border-white/15 sm:p-8">
+                <span className="mb-3 inline-flex w-fit rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-[#a5f3fc] sm:mb-4">
                   {p.tag}
                 </span>
-                <h3 className="font-display text-xl font-bold text-white">{p.title}</h3>
+                <h3 className="font-display text-lg font-bold leading-snug text-white sm:text-xl">
+                  {p.title}
+                </h3>
                 <p className="mt-3 flex-1 leading-relaxed text-zinc-400">{p.desc}</p>
               </div>
             </motion.li>
